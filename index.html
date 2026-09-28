@@ -4,52 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puja Dental Clinic | Sanganer, Jaipur</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS for modern design -->
+    <script src="https://tailwindcss.com"></script>
+    <!-- FontAwesome for beautiful icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
+<body class="bg-slate-50 text-slate-800 font-sans">
 
-<body>
-
-    <header>
-        <h1>Puja Dental Clinic</h1>
-        <p>Your Smile, Our Priority</p>
+    <!-- Navbar / Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="bg-cyan-500 text-white p-2.5 rounded-lg shadow-md">
+                    <i class="fa-solid fa-tooth text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-cyan-600 tracking-wide">Puja Dental Clinic</h1>
+                    <p class="text-xs text-slate-500 font-medium">Your Smile, Our Priority</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:+919876543210" class="text-slate-600 hover:text-cyan-600 font-semibold flex items-center gap-2 transition">
+                    <i class="fa-solid fa-phone text-cyan-500"></i> +91 98765-43210
+                </a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>Welcome to Puja Dental Clinic</h2>
-            <p>
-                Quality dental care in Sanganer, Jaipur.
-                Our goal is to provide comfortable and reliable
-                dental treatment for you and your family.
-            </p>
-
-            <a href="tel:+91 8949775190">Call Now</a>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-cyan-500 to-blue-600 text-white py-16 px-4 text-center">
+            <div class="max-w-3xl mx-auto">
+                <span class="bg-cyan-400/30 text-cyan-100 text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">Top Dental Care in Jaipur</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold mt-4 mb-6 leading-tight">Welcome to Puja Dental Clinic</h2>
+                <p class="text-lg text-cyan-50/90 mb-8 max-w-2xl mx-auto">
+                    Quality dental care in Sanganer, Jaipur. Our goal is to provide comfortable, painless, and reliable dental treatment for you and your family.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="tel:+919876543210" class="w-full sm:w-auto bg-white text-cyan-600 font-bold px-8 py-3.5 rounded-xl shadow-lg hover:bg-cyan-50 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone"></i> Call Now
+                    </a>
+                    <!-- Format: https://wa.me -->
+                    <a href="https://wa.me." target="_blank" class="w-full sm:w-auto bg-emerald-500 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg hover:bg-emerald-600 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Book on WhatsApp
+                    </a>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Our Dental Services</h2>
-            <ul>
-                <li>General Dentistry</li>
-                <li>Teeth Cleaning</li>
-                <li>Dental Filling</li>
-                <li>Root Canal Treatment</li>
-                <li>Tooth Extraction</li>
-                <li>Dental Consultation</li>
-            </ul>
+        <!-- Services Section -->
+        <section class="max-w-6xl mx-auto px-4 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-950 relative inline-block pb-3">
+                    Our Dental Services
+                    <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-1 bg-cyan-500 rounded-full"></span>
+                </h2>
+                <p class="text-slate-500 mt-2">We provide wide range of dental treatments with latest technology</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100 flex items-start gap-4">
+                    <div class="bg-cyan-50 text-cyan-600 p-3 rounded-xl"><i class="fa-solid fa-user-doctor text-xl"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-1">General Dentistry</h3>
+                        <p class="text-sm text-slate-500">Complete oral checkups and comprehensive dental care plans.</p>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100 flex items-start gap-4">
+                    <div class="bg-cyan-50 text-cyan-600 p-3 rounded-xl"><i class="fa-solid fa-sparkles text-xl"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-1">Teeth Cleaning</h3>
+                        <p class="text-sm text-slate-500">Remove plaque and stains for a brighter, healthier smile.</p>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100 flex items-start gap-4">
+                    <div class="bg-cyan-50 text-cyan-600 p-3 rounded-xl"><i class="fa-solid fa-shield-halved text-xl"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-1">Dental Filling</h3>
+                        <p class="text-sm text-slate-500">High-quality, tooth-colored cavity fillings and restorations.</p>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100 flex items-start gap-4">
+                    <div class="bg-cyan-50 text-cyan-600 p-3 rounded-xl"><i class="fa-solid fa-tooth text-xl"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-1">Root Canal Treatment</h3>
+                        <p class="text-sm text-slate-500">Painless RCT to save your natural damaged or infected teeth.</p>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100 flex items-start gap-4">
+                    <div class="bg-cyan-50 text-cyan-600 p-3 rounded-xl"><i class="fa-solid fa-kit-medical text-xl"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-1">Tooth Extraction</h3>
+                        <p class="text-sm text-slate-500">Safe and comfortable tooth removal including wisdom teeth.</p>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-100 flex items-start gap-4">
+                    <div class="bg-cyan-50 text-cyan-600 p-3 rounded-xl"><i class="fa-solid fa-comments text-xl"></i></div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-1">Dental Consultation</h3>
+                        <p class="text-sm text-slate-500">Expert advice and personalized consultation for your issues.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Visit Us</h2>
-            <p>
-                Shop No. 23, Ganesh Colony,<br>
-                Near Rampura Fatak,<br>
-                Sanganer, Jaipur
-            </p>
+        <!-- Visit Us Section -->
+        <section class="bg-white border-t border-slate-100 py-16 px-4">
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-950 mb-4">Visit Our Clinic</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        We are conveniently located in Sanganer. Walk in or book an appointment over phone/WhatsApp today.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-cyan-500 mt-1 text-lg"></i>
+                            <p class="text-slate-700">
+                                <strong class="text-slate-900">Address:</strong><br>
+                                Shop No. 23, Ganesh Colony,<br>
+                                Near Rampura Fatak,<br>
+                                Sanganer, Jaipur
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Interactive styling placeholder for map -->
+                <div class="bg-slate-100 border border-slate-200 rounded-2xl h-64 flex flex-col items-center justify-center p-6 text-center shadow-inner">
+                    <i class="fa-solid fa-map-location-dot text-4xl text-slate-400 mb-2"></i>
+                    <p class="text-sm font-semibold text-slate-600">Google Maps Location Placeholder</p>
+                    <p class="text-xs text-slate-400 max-w-xs mt-1">You can embed the client's actual Google Map iframe code here.</p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-6 text-sm border-t border-slate-800">
         <p>© 2026 Puja Dental Clinic. All Rights Reserved.</p>
+        <p class="text-xs text-slate-600 mt-1">Designed by Your Business Name</p>
     </footer>
 
 </body>
